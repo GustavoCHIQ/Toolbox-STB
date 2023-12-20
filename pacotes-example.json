@@ -1,0 +1,12 @@
+{
+    "packages": [
+        {
+            "nome": "YouTube",
+            "pacote": "com.google.android.youtube.tv"
+        },
+        {
+            "nome": "YouTube Kids",
+            "pacote": "com.google.android.apps.youtube.kids"
+        }
+    ]
+}
