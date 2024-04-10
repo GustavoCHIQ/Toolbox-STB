@@ -60,6 +60,8 @@ type
     procedure btnIrClick(Sender: TObject);
     procedure btnVolumeMaisClick(Sender: TObject);
     procedure btnVolumesMenosClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure edtIPBOXChange(Sender: TObject);
   private
     { Private declarations }
     procedure PreencherComboBoxComArquivoJSON(const FileName: string);
@@ -162,9 +164,14 @@ var
   output: ansistring;
 begin
   RuncOmmand('C:\platform-tools\adb.exe', ['reboot'], output);
-  // aguardar 15 segundos para reiniciar e desativar o botão de reiniciar
-  Sleep(15000);
+  // aguardar 15 segundos para reiniciar
   mmoLog.Lines.Add(Trim(output));
+  Sleep(15000);
+
+  btnConectar.Enabled := Enabled;
+  btnDesconectar.Enabled := not Enabled;
+  pnlMeio.visible := False;
+  edtIPBOX.Text := '';
 end;
 
 procedure TfrmPrincipal.btnTirarPrintClick(Sender: TObject);
@@ -208,6 +215,35 @@ begin
     '25'], output);
   mmoLog.Lines.Add(Trim(output));
   mmoLog.Lines.Add('Comando executado com sucesso !');
+end;
+
+procedure TfrmPrincipal.Button1Click(Sender: TObject);
+var
+  output: ansistring;
+begin
+  RuncOmmand('C:\platform-tools\adb.exe', ['shell', 'input', 'keyevent',
+    '164'], output);
+  mmoLog.Lines.Add(Trim(output));
+  mmoLog.Lines.Add('Comando executado com sucesso !');
+end;
+
+procedure TfrmPrincipal.edtIPBOXChange(Sender: TObject);
+var
+  i: Integer;
+  valid: Boolean;
+begin
+  valid := True;
+  for i := 1 to Length(edtIPBOX.Text) do
+  begin
+    if not (edtIPBOX.Text[i] in ['0' .. '9', '.']) then
+    begin
+      valid := False;
+      Break;
+    end;
+  end;
+
+  if not valid then
+    edtIPBOX.Text := Copy(edtIPBOX.Text, 1, Length(edtIPBOX.Text) - 1);
 end;
 
 procedure TfrmPrincipal.btnProximoClick(Sender: TObject);

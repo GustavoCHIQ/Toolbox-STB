@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/11/23 13:27:13.000.006,=C:\Users\Gustavo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/11/23 13:27:43.000.058,C:\Users\Gustavo\Desktop\ToolBox_TVBOX\uMain.dfm=C:\Users\Gustavo\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/11/23 13:27:43.000.058,C:\Users\Gustavo\Desktop\ToolBox_TVBOX\uMain.pas=C:\Users\Gustavo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/11/23 13:27:55.000.794,C:\Users\Gustavo\Desktop\ToolBox_TVBOX\ToolBox.dproj=C:\Users\Gustavo\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/11/23 16:59:15.000.753,C:\Users\Gustavo\Desktop\ToolBox_TVBOX\ToolBox.dproj=C:\Users\Gustavo\Desktop\ToolBox_TVBOX\ToolBox.dproj</Transaction>
+    <Transaction>2023/11/23 18:04:02.000.785,C:\Users\Gustavo\Desktop\ToolBox_TVBOX\ToolBox.dproj=C:\Users\Gustavo\Desktop\ToolBox_TVBOX\ToolBox.dproj</Transaction>
+  </Transactions>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>

@@ -4,8 +4,8 @@ object frmPrincipal: TfrmPrincipal
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'ToolBox for Android STB - Beta'
-  ClientHeight = 741
-  ClientWidth = 878
+  ClientHeight = 733
+  ClientWidth = 876
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -20,34 +20,34 @@ object frmPrincipal: TfrmPrincipal
   object pnlPrincipal: TPanel
     Left = 0
     Top = 0
-    Width = 878
-    Height = 741
+    Width = 876
+    Height = 733
     Align = alClient
     TabOrder = 0
-    ExplicitWidth = 876
-    ExplicitHeight = 733
+    ExplicitWidth = 874
+    ExplicitHeight = 725
     object pnlMeio: TPanel
       Left = 1
       Top = 121
-      Width = 876
+      Width = 874
       Height = 376
       Align = alTop
       Locked = True
       TabOrder = 1
       Visible = False
-      ExplicitWidth = 874
+      ExplicitWidth = 872
       object pnlFuncoes: TPanel
         Left = 1
         Top = 1
-        Width = 874
+        Width = 872
         Height = 152
         Align = alTop
         TabOrder = 0
-        ExplicitWidth = 872
+        ExplicitWidth = 870
         object gpBoxFuncoes: TGroupBox
           Left = 1
           Top = 1
-          Width = 872
+          Width = 870
           Height = 398
           Align = alTop
           Caption = 'Fun'#231#245'es'
@@ -58,7 +58,7 @@ object frmPrincipal: TfrmPrincipal
           Font.Style = []
           ParentFont = False
           TabOrder = 0
-          ExplicitWidth = 870
+          ExplicitWidth = 868
           object btnReiniciarBox: TButton
             Left = 15
             Top = 32
@@ -127,15 +127,15 @@ object frmPrincipal: TfrmPrincipal
       object pnlControles: TPanel
         Left = 1
         Top = 153
-        Width = 874
+        Width = 872
         Height = 222
         Align = alClient
         TabOrder = 1
-        ExplicitWidth = 872
+        ExplicitWidth = 870
         object gpBoxControles: TGroupBox
           Left = 1
           Top = 1
-          Width = 872
+          Width = 870
           Height = 216
           Align = alTop
           Caption = 'Controles'
@@ -146,7 +146,7 @@ object frmPrincipal: TfrmPrincipal
           Font.Style = []
           ParentFont = False
           TabOrder = 0
-          ExplicitWidth = 870
+          ExplicitWidth = 868
           object btnCima: TButton
             Left = 134
             Top = 48
@@ -265,6 +265,7 @@ object frmPrincipal: TfrmPrincipal
             Caption = 'Mutar'
             TabOrder = 11
             StyleName = 'Windows'
+            OnClick = Button1Click
           end
         end
       end
@@ -272,15 +273,15 @@ object frmPrincipal: TfrmPrincipal
     object pnlTopo: TPanel
       Left = 1
       Top = 1
-      Width = 876
+      Width = 874
       Height = 120
       Align = alTop
       TabOrder = 0
-      ExplicitWidth = 874
+      ExplicitWidth = 872
       object GroupBox2: TGroupBox
         Left = 1
         Top = 1
-        Width = 874
+        Width = 872
         Height = 118
         Align = alClient
         Caption = 'Conex'#227'o'
@@ -291,7 +292,7 @@ object frmPrincipal: TfrmPrincipal
         Font.Style = []
         ParentFont = False
         TabOrder = 0
-        ExplicitWidth = 872
+        ExplicitWidth = 870
         object edtIPBOX: TEdit
           Left = 31
           Top = 38
@@ -306,6 +307,7 @@ object frmPrincipal: TfrmPrincipal
           TabOrder = 0
           TextHint = 'IP de Acesso'
           StyleName = 'Windows'
+          OnChange = edtIPBOXChange
         end
         object btnConectar: TButton
           Left = 439
@@ -344,30 +346,30 @@ object frmPrincipal: TfrmPrincipal
     object pnlInferior: TPanel
       Left = 1
       Top = 497
-      Width = 876
-      Height = 243
+      Width = 874
+      Height = 235
       Align = alClient
       TabOrder = 2
-      ExplicitWidth = 874
-      ExplicitHeight = 235
+      ExplicitWidth = 872
+      ExplicitHeight = 227
       object StatusBar1: TStatusBar
         Left = 1
-        Top = 216
-        Width = 874
+        Top = 208
+        Width = 872
         Height = 26
         Panels = <
           item
             Alignment = taRightJustify
             Width = 200
           end>
-        ExplicitTop = 208
-        ExplicitWidth = 872
+        ExplicitTop = 200
+        ExplicitWidth = 870
       end
       object mmoLog: TMemo
         Left = 1
         Top = 1
-        Width = 874
-        Height = 215
+        Width = 872
+        Height = 207
         Align = alClient
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -379,14 +381,14 @@ object frmPrincipal: TfrmPrincipal
         ScrollBars = ssVertical
         TabOrder = 1
         StyleName = 'Windows'
-        ExplicitWidth = 872
-        ExplicitHeight = 207
+        ExplicitWidth = 870
+        ExplicitHeight = 199
       end
     end
   end
   object Timer1: TTimer
     OnTimer = Timer1Timer
     Left = 794
-    Top = 42
+    Top = 58
   end
 end
